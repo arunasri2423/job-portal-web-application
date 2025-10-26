@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% block title %}Admin Jobseeker Dashboard{% endblock %}
+{% block content %}
+<style>
+    body {
+        background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+    }
+    .admin-title {
+        color: #2e7d7b;
+        font-weight: 900;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-shadow: 0 2px 12px rgba(46,125,123,0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+    }
+    .admin-title i {
+        color: #00b894;
+        font-size: 2.3rem;
+        filter: drop-shadow(0 2px 8px #b2f7ef60);
+    }
+    .jobseeker-card {
+        border-radius: 18px;
+        box-shadow: 0 6px 32px 0 rgba(80, 160, 160, 0.10), 0 1.5px 4px 0 rgba(44,62,80,0.08);
+        background: linear-gradient(120deg, #b2f7ef 0%, #a1c4fd 100%);
+        border: none;
+        transition: box-shadow 0.22s, transform 0.22s, background 0.22s;
+        position: relative;
+        overflow: hidden;
+        min-height: 180px;
+        animation: fadeInUp 0.8s cubic-bezier(.39,.575,.56,1.000);
+    }
+    .jobseeker-card:hover {
+        box-shadow: 0 12px 36px 0 rgba(46,125,123,0.18), 0 2px 8px 0 rgba(44,62,80,0.10);
+        background: linear-gradient(120deg, #a1c4fd 0%, #b2f7ef 100%);
+        transform: translateY(-6px) scale(1.03);
+    }
+    .jobseeker-card .card-title {
+        color: #2e7d7b;
+        font-weight: 800;
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .jobseeker-card .card-title i {
+        color: #00b894;
+        font-size: 1.2rem;
+    }
+    .jobseeker-card .card-text {
+        color: #2c3e50;
+        font-size: 1.08rem;
+        margin-bottom: 0.7rem;
+    }
+    .jobseeker-card .btn-primary {
+        background: linear-gradient(90deg, #00b894 0%, #0984e3 100%);
+        border: none;
+        font-weight: 700;
+        border-radius: 10px;
+        padding: 0.5rem 1.3rem;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(102,126,234,0.10);
+        transition: transform 0.18s, box-shadow 0.18s, background 0.25s;
+    }
+    .jobseeker-card .btn-primary:hover, .jobseeker-card .btn-primary:focus {
+        background: linear-gradient(90deg, #0984e3 0%, #00b894 100%);
+        color: #fff;
+        transform: scale(1.04) translateY(-2px);
+        box-shadow: 0 6px 24px rgba(102,126,234,0.18);
+    }
+    @media (max-width: 991.98px) {
+        .admin-title {
+            font-size: 1.5rem;
+        }
+        .jobseeker-card {
+            min-height: 150px;
+        }
+    }
+    @media (max-width: 767.98px) {
+        .admin-title {
+            font-size: 1.2rem;
+        }
+        .jobseeker-card {
+            min-height: 120px;
+        }
+    }
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(40px); }
+        100% { opacity: 1; transform: none; }
+    }
+</style>
+<div class="container mt-4">
+    <div class="admin-title"><i class="fas fa-users"></i>Jobseeker Dashboard (Admin)</div>
+    <div class="row">
+        {% for jobseeker in jobseekers %}
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card jobseeker-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-user"></i> {{ jobseeker.username }}</h5>
+                    <p class="card-text"><i class="fas fa-envelope"></i> {{ jobseeker.email }}</p>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#jobseekerModal{{ jobseeker.id }}">
+                        <i class="fas fa-id-card"></i> View Resume & Applied Jobs
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for jobseeker -->
+        <div class="modal fade" id="jobseekerModal{{ jobseeker.id }}" tabindex="-1" aria-labelledby="jobseekerModalLabel{{ jobseeker.id }}" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="jobseekerModalLabel{{ jobseeker.id }}">
+                  <i class="fas fa-user"></i> Profile: {{ jobseeker.username }}
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="max-height: 60vh; overflow-y: auto;">
+                <p><strong><i class="fas fa-envelope"></i> Email:</strong> {{ jobseeker.email }}</p>
+                {% if jobseeker.resume_path %}
+                  <p><strong><i class="fas fa-file-download"></i> Resume:</strong> Uploaded Already!</p>
+                {% else %}
+                  <p><strong><i class="fas fa-file-download"></i> Resume:</strong> Not uploaded</p>
+                {% endif %}
+                <hr>
+                <h6><i class="fas fa-briefcase"></i> Applied Jobs:</h6>
+                {% if jobseeker.applications|length == 0 %}
+                  <p>No jobs applied yet.</p>
+                {% else %}
+                  <ul>
+                  {% for app in jobseeker.applications %}
+                    <li>{{ app.job.title }}</li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %} 

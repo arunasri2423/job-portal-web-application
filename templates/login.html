@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+    }
+    .login-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 6px 32px 0 rgba(80, 80, 160, 0.10), 0 1.5px 4px 0 rgba(44,62,80,0.08);
+        animation: fadeInDown 0.8s cubic-bezier(.39,.575,.56,1.000);
+        border: none;
+        margin-top: 3.5rem;
+        overflow: hidden;
+    }
+    .login-card .card-body {
+        padding: 2.5rem 2.5rem 2rem 2.5rem;
+    }
+    .login-title {
+        color: #764ba2;
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.2rem;
+        text-align: center;
+        text-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    }
+    .subtitle{
+        color: #3c9b7f;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 1.2rem;
+        text-align: center;
+        text-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    }
+    .login-icon {
+        font-size: 2.7rem;
+        color: #667eea;
+        margin-bottom: 1.2rem;
+        display: flex;
+        justify-content: center;
+        animation: popIn 1.1s cubic-bezier(.39,.575,.56,1.000);
+    }
+    .form-label {
+        color: #764ba2;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    .form-control {
+        border-radius: 10px;
+        border: 1.5px solid #764ba2;
+        padding: 0.7rem 1.2rem;
+        font-size: 1.08rem;
+        transition: border 0.22s, box-shadow 0.22s;
+        box-shadow: 0 2px 8px rgba(118,75,162,0.06);
+        background: #f8f9fa;
+    }
+    .form-control:focus {
+        border: 2px solid #667eea;
+        outline: none;
+        box-shadow: 0 4px 16px rgba(102,126,234,0.10);
+        background: #fff;
+    }
+    .btn-primary {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        font-weight: 700;
+        border-radius: 10px;
+        padding: 0.7rem 1.7rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(102,126,234,0.10);
+        transition: transform 0.18s, box-shadow 0.18s, background 0.25s;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+        background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+        color: #fbc2eb;
+        transform: scale(1.04) translateY(-2px);
+        box-shadow: 0 6px 24px rgba(102,126,234,0.18);
+    }
+    @keyframes fadeInDown {
+        0% { opacity: 0; transform: translateY(-40px); }
+        100% { opacity: 1; transform: none; }
+    }
+    @keyframes popIn {
+        0% { opacity: 0; transform: scale(0.95); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+</style>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        <div class="card login-card">
+            <div class="card-body">
+                <div class="login-icon"><i class="fas fa-sign-in-alt"></i></div>
+                <p class="justify-content-center text-center subtitle">Already a Admin/Jobseeker/Recruiter?</p>
+                <div class="login-title">Login</div>
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,306 @@
+{% extends "base.html" %}
+
+{% block title %}Job Details - {{ job.title }}{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+    }
+    .job-detail-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 6px 32px 0 rgba(80, 80, 160, 0.10), 0 1.5px 4px 0 rgba(44,62,80,0.08);
+        animation: fadeInDown 0.8s cubic-bezier(.39,.575,.56,1.000);
+        border: none;
+        margin-bottom: 2.5rem;
+        overflow: hidden;
+    }
+    .job-detail-card .card-header {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        font-weight: 800;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        box-shadow: 0 2px 8px rgba(102,126,234,0.10);
+        padding: 1.2rem 2rem;
+    }
+    .job-detail-card .card-body {
+        background: #fff;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        padding: 2rem 2rem 1.5rem 2rem;
+    }
+    .job-detail-card h4 {
+        color: #764ba2;
+        font-weight: 700;
+        margin-bottom: 0.7rem;
+    }
+    .job-detail-card ul {
+        margin-left: 1.2rem;
+    }
+    .job-detail-card .btn-danger {
+        border-radius: 8px;
+        font-weight: 600;
+        background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+        border: none;
+        transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+        box-shadow: 0 2px 8px rgba(231,76,60,0.10);
+    }
+    .job-detail-card .btn-danger:hover, .job-detail-card .btn-danger:focus {
+        background: linear-gradient(90deg, #c0392b 0%, #e74c3c 100%);
+        color: #fff;
+        box-shadow: 0 6px 24px rgba(231,76,60,0.18);
+    }
+    .side-card {
+        background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+        border-radius: 18px;
+        box-shadow: 0 6px 32px 0 rgba(80, 80, 160, 0.10), 0 1.5px 4px 0 rgba(44,62,80,0.08);
+        animation: fadeInUp 0.9s cubic-bezier(.39,.575,.56,1.000);
+        border: none;
+        overflow: hidden;
+    }
+    .side-card .card-header {
+        background: transparent;
+        color: #4f1886;
+        font-size: 1.25rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(44,62,80,0.10);
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        padding: 1.1rem 1.5rem 1rem 1.5rem;
+    }
+    .side-card .card-body {
+        background: transparent;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+    }
+    .applicant-card, .match-info-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+        margin-bottom: 1.2rem;
+        border-left: 5px solid #27ae60;
+        padding: 1rem 1.2rem;
+        animation: fadeIn 1s cubic-bezier(.39,.575,.56,1.000);
+    }
+    .match-score {
+        color: #27ae60;
+        font-weight: bold;
+        font-size: 1.08rem;
+        letter-spacing: 0.5px;
+    }
+    .badge.bg-success {
+        background: linear-gradient(90deg, #27ae60 0%, #43e97b 100%);
+        color: #fff;
+        font-weight: 600;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+    }
+    .btn-primary, .btn-success, .btn-sm {
+        border-radius: 8px;
+        font-weight: 600;
+        transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+        box-shadow: 0 2px 8px rgba(102,126,234,0.10);
+    }
+    .btn-primary {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        border: none;
+    }
+    .btn-primary:hover, .btn-primary:focus {
+        background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+        color: #fbc2eb;
+    }
+    .btn-success {
+        background: linear-gradient(90deg, #27ae60 0%, #43e97b 100%);
+        border: none;
+        color: #fff;
+    }
+    .btn-success:hover, .btn-success:focus {
+        background: linear-gradient(90deg, #43e97b 0%, #27ae60 100%);
+        color: #fff;
+        box-shadow: 0 6px 24px rgba(39,174,96,0.18);
+    }
+    .alert-info, .alert-warning, .alert-success {
+        border-radius: 12px;
+        font-size: 1.08rem;
+        box-shadow: 0 2px 8px rgba(102,126,234,0.08);
+        margin-bottom: 1.2rem;
+    }
+    .progress {
+        height: 1.3rem;
+        border-radius: 8px;
+        background: #e0e7ff;
+        box-shadow: 0 2px 8px rgba(102,126,234,0.08);
+    }
+    .progress-bar {
+        background: linear-gradient(90deg, #27ae60 0%, #43e97b 100%);
+        font-weight: 700;
+        font-size: 1.05rem;
+        border-radius: 8px;
+        transition: width 0.6s cubic-bezier(.39,.575,.56,1.000);
+    }
+    @media (max-width: 991.98px) {
+        .job-detail-card, .side-card {
+            margin-bottom: 1.2rem;
+        }
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: none; }
+    }
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(40px); }
+        100% { opacity: 1; transform: none; }
+    }
+    @keyframes fadeInDown {
+        0% { opacity: 0; transform: translateY(-40px); }
+        100% { opacity: 1; transform: none; }
+    }
+</style>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card job-detail-card">
+                <div class="card-header">
+                    <h2 class="mb-0">{{ job.title }}</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text" style="color:#667eea; font-weight:600; margin-bottom:1.2rem;">Posted by: {{ job.posted_by_user.username }}</p>
+                    <div class="mb-4">
+                        <h4>Job Description</h4>
+                        <p>{{ job.description }}</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4>Requirements</h4>
+                        <ul>
+                            {% for req in job.requirements.split(',') if job.requirements %}
+                            <li>{{ req.strip() }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <!--div class="mb-4">
+                        <h4>Location</h4>
+                        <p>{{ job.location }}</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4>Salary Range</h4>
+                        <p>{{ job.salary_range }}</p>
+                    </div-->
+                    <div class="mb-4">
+                        <h4>Posted Date</h4>
+                        <p>{{ job.posted_date.strftime('%Y-%m-%d') }}</p>
+                    </div>
+                </div>
+                {% if current_user.is_recruiter and job.posted_by == current_user.id %}
+                <div class="card-footer text-end" style="background:transparent; border:none;">
+                    <form method="POST" action="{{ url_for('delete_job', job_id=job.id) }}" onsubmit="return confirm('Are you sure you want to delete this job? This action cannot be undone.');">
+                        <button type="submit" class="btn btn-danger">Delete Job</button>
+                    </form>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card side-card">
+                <div class="card-header">
+                    {% if current_user.is_recruiter %}
+                        Applicants
+                    {% else %}
+                        Match Information
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    {% if current_user.is_recruiter %}
+                        {% set unique_applicants = [] %}
+                        {% for application in job.applications|sort(attribute='applied_date', reverse=True) %}
+                            {% if application.user.id not in unique_applicants %}
+                                {% set _ = unique_applicants.append(application.user.id) %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if unique_applicants|length > 0 %}
+                            {% for application in job.applications|sort(attribute='applied_date', reverse=True) %}
+                                {% if application.user.id in unique_applicants %}
+                                    {% set _ = unique_applicants.remove(application.user.id) %}
+                                    <div class="applicant-card">
+                                        <p><strong>Applicant:</strong> {{ application.user.username }}</p>
+                                        <p><strong>Email:</strong> {{ application.user.email }}</p>
+                                        <p class="match-score">Match Score: {{ applicant_match_info[application.id].score|round(1) }}%</p>
+                                        {% if applicant_match_info[application.id].skills %}
+                                            <div class="mb-2">
+                                                <span class="text-success">Matched Skills:</span>
+                                                <div style="margin-top: 5px;">
+                                                    {% for skill in applicant_match_info[application.id].skills %}
+                                                        <span class="badge bg-success me-1">{{ skill }}</span>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                        {% if application.user.resume_path %}
+                                            <a href="{{ url_for('download_applicant_resume', user_id=application.user.id) }}" class="btn btn-sm btn-primary" download>Download Resume</a>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <div class="alert alert-info">No applicants yet for this job.</div>
+                        {% endif %}
+                    {% else %}
+                        {% if current_user.resume_path %}
+                            <div class="match-info-card mb-3">
+                                <h5>Match Score</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" 
+                                         style="width: {{ match_score|round(1) }}%" 
+                                         aria-valuenow="{{ match_score|round(1) }}" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        {{ match_score|round(1) }}%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-card mb-3">
+                                <h5>Skills Match</h5>
+                                <div class="skills-container">
+                                    {% if skills_matched %}
+                                        <h6 class="text-success">Matched Skills:</h6>
+                                        <div class="matched-skills">
+                                            {% for pattern in skills_matched %}
+                                            <div class="skill-match">
+                                                <span class="match-text">{{ pattern|replace('\\b', '')|replace('\\s+', ' ')|replace('\\.', '')|replace('\\|', ' or ') }}</span>
+                                                <span class="badge bg-success">Matched</span>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    {% else %}
+                                        <p class="text-muted">No skills matched</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% if applied %}
+                            <div class="alert alert-success">
+                                ✓ You have already applied for this job!
+                            </div>
+                            {% else %}
+                            <div class="d-grid gap-2">
+                                <a href="{{ url_for('apply_job', job_id=job.id) }}" class="btn btn-success">Apply Now</a>
+                            </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="alert alert-warning">
+                                Please upload your resume first to see your match score
+                                <a href="{{ url_for('dashboard') }}" class="btn btn-primary mt-2">Upload Resume</a>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

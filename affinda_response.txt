@@ -1,0 +1,634 @@
+{'data': {'certifications': ['Programming Python R',
+                             'Data Analysis with Python Coursera',
+                             'Excel to MySQL Analytics Techniques Coursera'],
+          'dateOfBirth': None,
+          'education': [{'accreditation': {'education': 'Bachelor of Science',
+                                           'educationLevel': 'bachelors',
+                                           'inputStr': 'Bachelor of Science in '
+                                                       'Data Science',
+                                           'matchStr': ''},
+                         'dates': {'completionDate': '2024-01-01',
+                                   'isCurrent': False,
+                                   'rawText': '2024',
+                                   'startDate': None},
+                         'grade': {'metric': 'CGPA',
+                                   'raw': 'CGPA: 8.7 / 10',
+                                   'value': '8.7/10'},
+                         'id': 94825629,
+                         'location': {'apartmentNumber': None,
+                                      'city': None,
+                                      'country': 'India',
+                                      'countryCode': 'IN',
+                                      'formatted': 'India',
+                                      'latitude': 20.593684,
+                                      'longitude': 78.96288,
+                                      'poBox': None,
+                                      'postalCode': None,
+                                      'rawInput': 'India',
+                                      'state': None,
+                                      'stateCode': None,
+                                      'street': None,
+                                      'streetNumber': None},
+                         'organization': 'ABC University'}],
+          'emails': ['priyasharma@example.com'],
+          'headShot': None,
+          'isResumeProbability': None,
+          'languages': ['English'],
+          'linkedin': 'linkedin.com',
+          'location': None,
+          'name': {'first': 'Priya',
+                   'last': 'Sharma',
+                   'middle': '',
+                   'raw': 'Priya Sharma',
+                   'title': ''},
+          'objective': '',
+          'phoneNumberDetails': [{'countryCode': None,
+                                  'formattedNumber': None,
+                                  'internationalCountryCode': None,
+                                  'nationalNumber': None,
+                                  'rawText': '+91 - XXXXXXXXXX'}],
+          'phoneNumbers': ['+91 - XXXXXXXXXX'],
+          'profession': 'Data Analyst Intern',
+          'publications': [],
+          'rawText': 'Fresher \n'
+                     'Data Analyst \n'
+                     'Resume \n'
+                     'Personal Information \n'
+                     'Name: Priya Sharma Email: priyasharma@example.com Phone: '
+                     '+91 - XXXXXXXXXX LinkedIn: linkedin.com / in / '
+                     'priyasharma GitHub: github.com / priyasharma \n'
+                     'Career Objective \n'
+                     'Detail - oriented and analytical Data Science graduate '
+                     'seeking an entry - level Data Analyst position to apply '
+                     'statistical skills, SQL proficiency, and data '
+                     'visualization knowledge in solving real - world business '
+                     'problems. \n'
+                     'Education \n'
+                     'Bachelor of Science in Data Science ABC University, '
+                     'India Graduated: 2024 CGPA: 8.7 / 10 \n'
+                     'Technical Skills \n'
+                     '- Programming: Python, R \n'
+                     '- Data Analysis: SQL, Excel, Pandas \n'
+                     '- Visualization Tools: Power BI, Tableau \n'
+                     '- Tools: Jupyter Notebook, VS Code, Git \n'
+                     '- Mathematics & Statistics: Linear Algebra, Probability, '
+                     'Hypothesis Testing \n'
+                     'Academic Projects \n'
+                     '1 . Sales Forecasting Dashboard - Built a dynamic Power '
+                     'BI dashboard for sales trends analysis using a retail '
+                     'dataset. 2. Student Performance Analysis - Used SQL and '
+                     'Excel to analyze academic performance across various '
+                     'metrics. \n'
+                     'Fresher Data Analyst Resume \n'
+                     '\n'
+                     '3. COVID - 19 Data Analysis - Applied Python, Pandas, '
+                     'and Matplotlib to analyze trends in COVID - 19 spread '
+                     'across regions. \n'
+                     '\n'
+                     'Internship \n'
+                     'Data Analyst Intern XYZ Analytics Firm - Jan 2024 to Mar '
+                     '2024 \n'
+                     '- Used SQL to extract and clean datasets for '
+                     'visualization. \n'
+                     '- Developed Excel models for financial forecasting. \n'
+                     '- Created Power BI reports to present KPIs to '
+                     'stakeholders. \n'
+                     'Certifications \n'
+                     '- Data Analysis with Python - Coursera \n'
+                     '- Excel to MySQL: Analytics Techniques - Coursera \n'
+                     '- Power BI Desktop for Business Intelligence - Udemy ',
+          'redactedText': 'Fresher\n'
+                          'Data Analyst\n'
+                          'Resume\n'
+                          'Personal Information Name: ***** ****** Email: '
+                          '*********************** Phone: *** * ********** '
+                          'LinkedIn: ************ / in / priyasharma GitHub: '
+                          '********** / priyasharma\n'
+                          'Career Objective Detail - oriented and analytical '
+                          'Data Science graduate seeking an entry - level Data '
+                          'Analyst position to apply statistical skills, SQL '
+                          'proficiency, and data visualization knowledge in '
+                          'solving real - world business problems.\n'
+                          'Education Bachelor of Science in Data Science ABC '
+                          'University, India Graduated* **** CGPA: 8.7 / 10\n'
+                          'Technical Skills - Programming: Python, R - Data '
+                          'Analysis: SQL, Excel, Pandas - Visualization Tools: '
+                          'Power BI, Tableau - Tools: Jupyter Notebook, VS '
+                          'Code, Git - Mathematics & Statistics: Linear '
+                          'Algebra, Probability, Hypothesis Testing\n'
+                          'Academic Projects 1 . Sales Forecasting Dashboard - '
+                          'Built a dynamic Power BI dashboard for sales trends '
+                          'analysis using a retail dataset. 2. Student '
+                          'Performance Analysis - Used SQL and Excel to '
+                          'analyze academic performance across various '
+                          'metrics.\n'
+                          'Fresher Data Analyst Resume 3. COVID - 19 Data '
+                          'Analysis - Applied Python, Pandas, and Matplotlib '
+                          'to analyze trends in COVID - 19 spread across '
+                          'regions. Internship Data Analyst Intern XYZ '
+                          'Analytics Firm * *** **** to *** **** * Used SQL to '
+                          'extract and clean datasets for visualization. - '
+                          'Developed Excel models for financial forecasting. - '
+                          'Created Power BI reports to present KPIs to '
+                          'stakeholders.\n'
+                          'Certifications - Data Analysis with Python - '
+                          'Coursera - Excel to MySQL: Analytics Techniques - '
+                          'Coursera - Power BI Desktop for Business '
+                          'Intelligence - Udemy',
+          'referees': [],
+          'sections': [{'bbox': [185.48601, 35.83203, 242.702, 47.528015],
+                        'pageIndex': 0,
+                        'sectionType': 'Other',
+                        'text': 'Fresher '},
+                       {'bbox': [248.62201, 35.83203, 343.934, 50.728027],
+                        'pageIndex': 0,
+                        'sectionType': 'PersonalDetails',
+                        'text': 'Data Analyst '},
+                       {'bbox': [349.982, 35.83203, 410.55798, 47.528015],
+                        'pageIndex': 0,
+                        'sectionType': 'Other',
+                        'text': 'Resume '},
+                       {'bbox': [31.718, 94.09601, 214.91197, 221.14905],
+                        'pageIndex': 0,
+                        'sectionType': 'PersonalDetails',
+                        'text': 'Personal Information \n'
+                                'Name: Priya Sharma Email: '
+                                'priyasharma@example.com Phone: +91 - '
+                                'XXXXXXXXXX LinkedIn: linkedin.com / in / '
+                                'priyasharma GitHub: github.com / '
+                                'priyasharma '},
+                       {'bbox': [31.542, 258.38605, 563.98016, 317.51898],
+                        'pageIndex': 0,
+                        'sectionType': 'Summary',
+                        'text': 'Career Objective \n'
+                                'Detail - oriented and analytical Data Science '
+                                'graduate seeking an entry - level Data '
+                                'Analyst position to apply statistical skills, '
+                                'SQL proficiency, and data visualization '
+                                'knowledge in solving real - world business '
+                                'problems. '},
+                       {'bbox': [31.344, 354.9, 208.66399, 457.048],
+                        'pageIndex': 0,
+                        'sectionType': 'Education',
+                        'text': 'Education \n'
+                                'Bachelor of Science in Data Science ABC '
+                                'University, India Graduated: 2024 CGPA: 8.7 / '
+                                '10 '},
+                       {'bbox': [31.358, 496.49603, 391.858, 623.669],
+                        'pageIndex': 0,
+                        'sectionType': 'Skills/Interests/Languages',
+                        'text': 'Technical Skills \n'
+                                '- Programming: Python, R \n'
+                                '- Data Analysis: SQL, Excel, Pandas \n'
+                                '- Visualization Tools: Power BI, Tableau \n'
+                                '- Tools: Jupyter Notebook, VS Code, Git \n'
+                                '- Mathematics & Statistics: Linear Algebra, '
+                                'Probability, Hypothesis Testing '},
+                       {'bbox': [31.43, 661.05005, 563.705, 763.14404],
+                        'pageIndex': 0,
+                        'sectionType': 'Projects',
+                        'text': 'Academic Projects \n'
+                                '1 . Sales Forecasting Dashboard - Built a '
+                                'dynamic Power BI dashboard for sales trends '
+                                'analysis using a retail dataset. 2. Student '
+                                'Performance Analysis - Used SQL and Excel to '
+                                'analyze academic performance across various '
+                                'metrics. '},
+                       {'bbox': [31.399, 35.83203, 563.47, 289.036],
+                        'pageIndex': 1,
+                        'sectionType': 'WorkExperience',
+                        'text': 'Fresher Data Analyst Resume \n'
+                                '\n'
+                                '3. COVID - 19 Data Analysis - Applied Python, '
+                                'Pandas, and Matplotlib to analyze trends in '
+                                'COVID - 19 spread across regions. \n'
+                                '\n'
+                                'Internship \n'
+                                'Data Analyst Intern XYZ Analytics Firm - Jan '
+                                '2024 to Mar 2024 \n'
+                                '- Used SQL to extract and clean datasets for '
+                                'visualization. \n'
+                                '- Developed Excel models for financial '
+                                'forecasting. \n'
+                                '- Created Power BI reports to present KPIs to '
+                                'stakeholders. '},
+                       {'bbox': [31.674, 326.41602, 292.71494, 408.229],
+                        'pageIndex': 1,
+                        'sectionType': 'Training/Certifications',
+                        'text': 'Certifications \n'
+                                '- Data Analysis with Python - Coursera \n'
+                                '- Excel to MySQL: Analytics Techniques - '
+                                'Coursera \n'
+                                '- Power BI Desktop for Business Intelligence '
+                                '- Udemy '}],
+          'skills': [{'emsiId': 'KS126QY605N7YVHFYCTW',
+                      'id': 1101825475,
+                      'lastUsed': None,
+                      'name': 'MySQL',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS123X777H5WFNXQ6BPM',
+                      'id': 1101825478,
+                      'lastUsed': None,
+                      'name': 'Sales',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None}],
+                      'type': 'common_skill'},
+                     {'emsiId': 'KS7LO8P3MXB93R3C9RWL',
+                      'id': 1101825485,
+                      'lastUsed': None,
+                      'name': 'Data Science',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Summary',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS1218L60PDVZX16NZT1',
+                      'id': 1101825486,
+                      'lastUsed': None,
+                      'name': 'Dashboard',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KSGWPO6DSN70GRY20JFT',
+                      'id': 1101825488,
+                      'lastUsed': None,
+                      'name': 'Pandas (Python Package)',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS120GV6C72JMSZKMTD7',
+                      'id': 1101825489,
+                      'lastUsed': None,
+                      'name': 'Data Analysis',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS441626TDSV2J6GBB86',
+                      'id': 1101825490,
+                      'lastUsed': None,
+                      'name': 'Tableau (Business Intelligence Software)',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'ESA91D8112EB9ECA3570',
+                      'id': 1101825492,
+                      'lastUsed': None,
+                      'name': 'Git (Version Control System)',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'PersonalDetails',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS127P8798Q169DNXBQF',
+                      'id': 1101825494,
+                      'lastUsed': None,
+                      'name': 'Performance Analysis',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KSFDBQT68SA9R0I0SAVH',
+                      'id': 1101825497,
+                      'lastUsed': None,
+                      'name': 'Jupyter',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS125LS6N7WP4S6SFTCK',
+                      'id': 1101825498,
+                      'lastUsed': None,
+                      'name': 'Python (Programming Language)',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS1241P6PXRCKTDSWHTV',
+                      'id': 1101825501,
+                      'lastUsed': '2024-03-01',
+                      'name': 'Forecasting',
+                      'numberOfMonths': 2,
+                      'sources': [{'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None},
+                                  {'position': 0,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': 192050224}],
+                      'type': 'common_skill'},
+                     {'emsiId': 'KS124CH623PFBJS8T5KM',
+                      'id': 1101825504,
+                      'lastUsed': None,
+                      'name': 'Github',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'PersonalDetails',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS124DQ6JX0NX9DBFDM8',
+                      'id': 1101825480,
+                      'lastUsed': '2024-03-01',
+                      'name': 'R (Programming Language)',
+                      'numberOfMonths': 2,
+                      'sources': [{'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Summary',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'PersonalDetails',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': 0,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': 192050224},
+                                  {'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS120GV5ZXR64CJLL1J4',
+                      'id': 1101825483,
+                      'lastUsed': '2024-03-01',
+                      'name': 'Analytics',
+                      'numberOfMonths': 2,
+                      'sources': [{'position': 0,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': 192050224},
+                                  {'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS440W865GC4VRBW6LJP',
+                      'id': 1101825484,
+                      'lastUsed': '2024-03-01',
+                      'name': 'SQL (Programming Language)',
+                      'numberOfMonths': 2,
+                      'sources': [{'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Summary',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': 0,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': 192050224},
+                                  {'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS1282T6STD9RJZ677XL',
+                      'id': 1101825493,
+                      'lastUsed': '2024-03-01',
+                      'name': 'Visualization',
+                      'numberOfMonths': 2,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Summary',
+                                   'workExperienceId': None},
+                                  {'position': 0,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': 192050224}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS13USA80NE38XJHA2TL',
+                      'id': 1101825495,
+                      'lastUsed': '2024-03-01',
+                      'name': 'Power BI',
+                      'numberOfMonths': 2,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None},
+                                  {'position': 0,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': 192050224},
+                                  {'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS1200H6XYN1CR0G5NZ0',
+                      'id': 1101825499,
+                      'lastUsed': '2024-03-01',
+                      'name': 'Microsoft Excel',
+                      'numberOfMonths': 2,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None},
+                                  {'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None},
+                                  {'position': 0,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': 192050224},
+                                  {'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None}],
+                      'type': 'common_skill'},
+                     {'emsiId': 'KS126796RG0M9JRLKDQY',
+                      'id': 1101825476,
+                      'lastUsed': None,
+                      'name': 'Matplotlib (Python Package)',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'WorkExperience',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS126706DPFD3354M7YK',
+                      'id': 1101825477,
+                      'lastUsed': None,
+                      'name': 'Mathematics',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'common_skill'},
+                     {'emsiId': 'KS122Q960QYMW3YH0YWF',
+                      'id': 1101825479,
+                      'lastUsed': None,
+                      'name': 'Data Visualization',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Summary',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS1281N6YRB0FN640PH8',
+                      'id': 1101825481,
+                      'lastUsed': None,
+                      'name': 'Probability',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS125VF76P4FXDVFFBPJ',
+                      'id': 1101825482,
+                      'lastUsed': None,
+                      'name': 'Linear Algebra',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'BGS91833D85A87367BA1',
+                      'id': 1101825487,
+                      'lastUsed': None,
+                      'name': 'Sales Forecasting',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Projects',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KSXP0ABTAF9E0XOQ1MTF',
+                      'id': 1101825491,
+                      'lastUsed': None,
+                      'name': 'Jupyter Notebook',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS120ZX7019J4V8DHBTM',
+                      'id': 1101825496,
+                      'lastUsed': None,
+                      'name': 'Business Intelligence',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Training/Certifications',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS440Y975RD841M02V3S',
+                      'id': 1101825500,
+                      'lastUsed': None,
+                      'name': 'Statistics',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'KS120D860H0P77RH6GND',
+                      'id': 1101825502,
+                      'lastUsed': None,
+                      'name': 'Algebra',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'},
+                     {'emsiId': 'ES271C4EB47A4BD5AD68',
+                      'id': 1101825503,
+                      'lastUsed': None,
+                      'name': 'VS Code',
+                      'numberOfMonths': None,
+                      'sources': [{'position': None,
+                                   'section': 'Skills/Interests/Languages',
+                                   'workExperienceId': None}],
+                      'type': 'specialized_skill'}],
+          'summary': 'Detail - oriented and analytical Data Science graduate '
+                     'seeking an entry - level Data Analyst position to apply '
+                     'statistical skills, SQL proficiency, and data '
+                     'visualization knowledge in solving real - world business '
+                     'problems.',
+          'totalYearsExperience': 0,
+          'websites': ['linkedin.com'],
+          'workExperience': [{'dates': {'endDate': '2024-03-01',
+                                        'isCurrent': False,
+                                        'monthsInPosition': 2,
+                                        'rawText': 'Jan 2024 to Mar 2024',
+                                        'startDate': '2024-01-01'},
+                              'id': 192050224,
+                              'jobDescription': '• Used SQL to extract and '
+                                                'clean datasets for '
+                                                'visualization. \n'
+                                                '• Developed Excel models for '
+                                                'financial forecasting. \n'
+                                                '• Created Power BI reports to '
+                                                'present KPIs to '
+                                                'stakeholders. ',
+                              'jobTitle': 'Data Analyst Intern',
+                              'location': None,
+                              'occupation': {'classification': None,
+                                             'emsiId': 'ETF31F205ACAAADB85',
+                                             'jobTitle': 'Data Analyst Intern',
+                                             'jobTitleNormalized': 'Data '
+                                                                   'Intern',
+                                             'managementLevel': 'Low'},
+                              'organization': 'XYZ Analytics Firm'}]},
+ 'error': {'errorCode': None, 'errorDetail': None},
+ 'meta': {'childDocuments': [],
+          'createdDt': '2025-07-11T13:09:28.728134Z',
+          'customIdentifier': None,
+          'documentType': 'resume',
+          'errorDetail': None,
+          'expiryTime': None,
+          'exportedDt': None,
+          'failed': False,
+          'file': 'https://affinda-api-data-prod-ap1.s3.amazonaws.com/media/documents/Fresher_Data_Analyst_Resume_KttAwot.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAU4IX6YWNMKFXCALY%2F20250711%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20250711T130930Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEM3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkcwRQIhAIUdu8ClkghX9%2Fg6e9BbfytsnMeECGj%2BUy5BZWICnrUHAiAyLWM1VdE%2FfJ3ETmY2W2MjXaIfRJkzLNdKq7%2FVKLA8yCqSBQjW%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDMzNTU5NDU3MTE2MiIMHBxRYOcp3ozdU%2B5eKuYEaOY8JXgakwo%2BXfw4OOHu3xw6MG5AbUIl5dGEg10QJ%2FCh0meqo4D0fd9hCO5UVswTKxua5qLk6H5%2F9P2LuZI5A8jI4AJmIU6V1CnyeovdosJekNuMVJWdCOPt1NFXp8AOxKLcEBAoxo7wuy5gzeY0NAu66V2fojv3%2BrxGZAQqGTGKzQSZcgQtRzx7IjJ6%2FNVGp4fhPo7v7mDANty7EMvYszSf%2BKwoudqc9JCnollmrmQWAkN8%2F50X7SZOg72aqVeqTOd4pTsuE4O0RPtwgndq3EftP7ExYpAIoIQK84nFHfFnKgxQl42zPorgCNk5N%2BBYmYpPG%2BeroDYgXnUqHjVvkBvISbXnUvu3LONGMWxfNWMn2HTnKg9fmxpj58mwlNSTkXq28nPyNhtwj55aZKJeBu0K128R4zV%2FvEJedKSnQPYaiBE%2FuTWNvw9rM%2BrKQ5Hs%2Bj3M5yrDX8TDApxzbubSAx%2BjeUYAX407jBDfcl91B8MAlUfSrvDMb4FPnxdcsfDmqS74UNJujCvzmit9axT86O%2F78Viex7gxQJC3gatwIm8xZpyI7rgjrC4UtiaGJECwzI99ho%2FGPNbA3ZeIF%2FKJhnwUTwt9kuOp0UT9zeHrjr1Yrs1gKa6y1D5rSU28ZcvWnSCIEfRzD9Tl3fe2ROIJ0LS64rHSzFO55npFtnnIP7MvDhYidsHtRe707VcKZSOUYe5NfUjU%2BqKTJkPs1Slqk43ME7LBye%2B%2F%2BiAOss2AA%2BZs1xV1DnldSpEVqh%2Bqeumaau%2BeW7WU3twTidzrsswJpsFVu7%2Bw4R1BNCp%2Fuma7UnuWjnm5558wqpHEwwY6mgF0B7bjustjPovTRuUiOkuG5Ehb9fad%2FZyGF5mxOguQOC5zVz01TjWM%2BStJ1S72F7knUXUNhsWpR9XUe%2B5ah%2BL5%2FpjzWqLVnDXeyfG%2BLd2StonTbRWhFqKsXTTU%2FqBDlabXIc4mN%2BXojqkVaqSaZvgJQ9AybyTN5i7%2BDAKuvirBOWH3AqjH36zjB1ZZX%2Bn0CKIS1oOvs7aevSla&X-Amz-Signature=268864510ffa2729caa48f100cbaf1a57a7c5fc61820f08f2a51a2fe73a77864',
+          'fileName': 'Fresher_Data_Analyst_Resume.pdf',
+          'identifier': 'WqiREVKE',
+          'isExported': False,
+          'isOcrd': False,
+          'isVerified': False,
+          'language': 'en',
+          'ocrConfidence': None,
+          'pages': [{'height': 841.8900146484375,
+                     'id': 131171759,
+                     'image': 'https://affinda-api-data-prod-ap1.s3.amazonaws.com/media/pages/131171759_uYlde9m.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAU4IX6YWNMKFXCALY%2F20250711%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20250711T130930Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEM3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkcwRQIhAIUdu8ClkghX9%2Fg6e9BbfytsnMeECGj%2BUy5BZWICnrUHAiAyLWM1VdE%2FfJ3ETmY2W2MjXaIfRJkzLNdKq7%2FVKLA8yCqSBQjW%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDMzNTU5NDU3MTE2MiIMHBxRYOcp3ozdU%2B5eKuYEaOY8JXgakwo%2BXfw4OOHu3xw6MG5AbUIl5dGEg10QJ%2FCh0meqo4D0fd9hCO5UVswTKxua5qLk6H5%2F9P2LuZI5A8jI4AJmIU6V1CnyeovdosJekNuMVJWdCOPt1NFXp8AOxKLcEBAoxo7wuy5gzeY0NAu66V2fojv3%2BrxGZAQqGTGKzQSZcgQtRzx7IjJ6%2FNVGp4fhPo7v7mDANty7EMvYszSf%2BKwoudqc9JCnollmrmQWAkN8%2F50X7SZOg72aqVeqTOd4pTsuE4O0RPtwgndq3EftP7ExYpAIoIQK84nFHfFnKgxQl42zPorgCNk5N%2BBYmYpPG%2BeroDYgXnUqHjVvkBvISbXnUvu3LONGMWxfNWMn2HTnKg9fmxpj58mwlNSTkXq28nPyNhtwj55aZKJeBu0K128R4zV%2FvEJedKSnQPYaiBE%2FuTWNvw9rM%2BrKQ5Hs%2Bj3M5yrDX8TDApxzbubSAx%2BjeUYAX407jBDfcl91B8MAlUfSrvDMb4FPnxdcsfDmqS74UNJujCvzmit9axT86O%2F78Viex7gxQJC3gatwIm8xZpyI7rgjrC4UtiaGJECwzI99ho%2FGPNbA3ZeIF%2FKJhnwUTwt9kuOp0UT9zeHrjr1Yrs1gKa6y1D5rSU28ZcvWnSCIEfRzD9Tl3fe2ROIJ0LS64rHSzFO55npFtnnIP7MvDhYidsHtRe707VcKZSOUYe5NfUjU%2BqKTJkPs1Slqk43ME7LBye%2B%2F%2BiAOss2AA%2BZs1xV1DnldSpEVqh%2Bqeumaau%2BeW7WU3twTidzrsswJpsFVu7%2Bw4R1BNCp%2Fuma7UnuWjnm5558wqpHEwwY6mgF0B7bjustjPovTRuUiOkuG5Ehb9fad%2FZyGF5mxOguQOC5zVz01TjWM%2BStJ1S72F7knUXUNhsWpR9XUe%2B5ah%2BL5%2FpjzWqLVnDXeyfG%2BLd2StonTbRWhFqKsXTTU%2FqBDlabXIc4mN%2BXojqkVaqSaZvgJQ9AybyTN5i7%2BDAKuvirBOWH3AqjH36zjB1ZZX%2Bn0CKIS1oOvs7aevSla&X-Amz-Signature=16c3fc4bcb398d121486b12142a58bb5408951960d2dd8a3b283d5cdcc9a5dea',
+                     'pageIndex': 0,
+                     'rotation': 0,
+                     'width': 595.280029296875},
+                    {'height': 841.8900146484375,
+                     'id': 131171760,
+                     'image': 'https://affinda-api-data-prod-ap1.s3.amazonaws.com/media/pages/131171760_ryR5U8j.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAU4IX6YWNMKFXCALY%2F20250711%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20250711T130930Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEM3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkcwRQIhAIUdu8ClkghX9%2Fg6e9BbfytsnMeECGj%2BUy5BZWICnrUHAiAyLWM1VdE%2FfJ3ETmY2W2MjXaIfRJkzLNdKq7%2FVKLA8yCqSBQjW%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDMzNTU5NDU3MTE2MiIMHBxRYOcp3ozdU%2B5eKuYEaOY8JXgakwo%2BXfw4OOHu3xw6MG5AbUIl5dGEg10QJ%2FCh0meqo4D0fd9hCO5UVswTKxua5qLk6H5%2F9P2LuZI5A8jI4AJmIU6V1CnyeovdosJekNuMVJWdCOPt1NFXp8AOxKLcEBAoxo7wuy5gzeY0NAu66V2fojv3%2BrxGZAQqGTGKzQSZcgQtRzx7IjJ6%2FNVGp4fhPo7v7mDANty7EMvYszSf%2BKwoudqc9JCnollmrmQWAkN8%2F50X7SZOg72aqVeqTOd4pTsuE4O0RPtwgndq3EftP7ExYpAIoIQK84nFHfFnKgxQl42zPorgCNk5N%2BBYmYpPG%2BeroDYgXnUqHjVvkBvISbXnUvu3LONGMWxfNWMn2HTnKg9fmxpj58mwlNSTkXq28nPyNhtwj55aZKJeBu0K128R4zV%2FvEJedKSnQPYaiBE%2FuTWNvw9rM%2BrKQ5Hs%2Bj3M5yrDX8TDApxzbubSAx%2BjeUYAX407jBDfcl91B8MAlUfSrvDMb4FPnxdcsfDmqS74UNJujCvzmit9axT86O%2F78Viex7gxQJC3gatwIm8xZpyI7rgjrC4UtiaGJECwzI99ho%2FGPNbA3ZeIF%2FKJhnwUTwt9kuOp0UT9zeHrjr1Yrs1gKa6y1D5rSU28ZcvWnSCIEfRzD9Tl3fe2ROIJ0LS64rHSzFO55npFtnnIP7MvDhYidsHtRe707VcKZSOUYe5NfUjU%2BqKTJkPs1Slqk43ME7LBye%2B%2F%2BiAOss2AA%2BZs1xV1DnldSpEVqh%2Bqeumaau%2BeW7WU3twTidzrsswJpsFVu7%2Bw4R1BNCp%2Fuma7UnuWjnm5558wqpHEwwY6mgF0B7bjustjPovTRuUiOkuG5Ehb9fad%2FZyGF5mxOguQOC5zVz01TjWM%2BStJ1S72F7knUXUNhsWpR9XUe%2B5ah%2BL5%2FpjzWqLVnDXeyfG%2BLd2StonTbRWhFqKsXTTU%2FqBDlabXIc4mN%2BXojqkVaqSaZvgJQ9AybyTN5i7%2BDAKuvirBOWH3AqjH36zjB1ZZX%2Bn0CKIS1oOvs7aevSla&X-Amz-Signature=7b1f980de72bfceda3dcb369dd7dcf2785b00c0c010d56734a4d7a0987cb782a',
+                     'pageIndex': 1,
+                     'rotation': 0,
+                     'width': 595.280029296875}],
+          'parentDocument': None,
+          'pdf': 'https://affinda-api-data-prod-ap1.s3.amazonaws.com/media/documents/Fresher_Data_Analyst_Resume_KttAwot.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAU4IX6YWNMKFXCALY%2F20250711%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20250711T130930Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEM3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkcwRQIhAIUdu8ClkghX9%2Fg6e9BbfytsnMeECGj%2BUy5BZWICnrUHAiAyLWM1VdE%2FfJ3ETmY2W2MjXaIfRJkzLNdKq7%2FVKLA8yCqSBQjW%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDMzNTU5NDU3MTE2MiIMHBxRYOcp3ozdU%2B5eKuYEaOY8JXgakwo%2BXfw4OOHu3xw6MG5AbUIl5dGEg10QJ%2FCh0meqo4D0fd9hCO5UVswTKxua5qLk6H5%2F9P2LuZI5A8jI4AJmIU6V1CnyeovdosJekNuMVJWdCOPt1NFXp8AOxKLcEBAoxo7wuy5gzeY0NAu66V2fojv3%2BrxGZAQqGTGKzQSZcgQtRzx7IjJ6%2FNVGp4fhPo7v7mDANty7EMvYszSf%2BKwoudqc9JCnollmrmQWAkN8%2F50X7SZOg72aqVeqTOd4pTsuE4O0RPtwgndq3EftP7ExYpAIoIQK84nFHfFnKgxQl42zPorgCNk5N%2BBYmYpPG%2BeroDYgXnUqHjVvkBvISbXnUvu3LONGMWxfNWMn2HTnKg9fmxpj58mwlNSTkXq28nPyNhtwj55aZKJeBu0K128R4zV%2FvEJedKSnQPYaiBE%2FuTWNvw9rM%2BrKQ5Hs%2Bj3M5yrDX8TDApxzbubSAx%2BjeUYAX407jBDfcl91B8MAlUfSrvDMb4FPnxdcsfDmqS74UNJujCvzmit9axT86O%2F78Viex7gxQJC3gatwIm8xZpyI7rgjrC4UtiaGJECwzI99ho%2FGPNbA3ZeIF%2FKJhnwUTwt9kuOp0UT9zeHrjr1Yrs1gKa6y1D5rSU28ZcvWnSCIEfRzD9Tl3fe2ROIJ0LS64rHSzFO55npFtnnIP7MvDhYidsHtRe707VcKZSOUYe5NfUjU%2BqKTJkPs1Slqk43ME7LBye%2B%2F%2BiAOss2AA%2BZs1xV1DnldSpEVqh%2Bqeumaau%2BeW7WU3twTidzrsswJpsFVu7%2Bw4R1BNCp%2Fuma7UnuWjnm5558wqpHEwwY6mgF0B7bjustjPovTRuUiOkuG5Ehb9fad%2FZyGF5mxOguQOC5zVz01TjWM%2BStJ1S72F7knUXUNhsWpR9XUe%2B5ah%2BL5%2FpjzWqLVnDXeyfG%2BLd2StonTbRWhFqKsXTTU%2FqBDlabXIc4mN%2BXojqkVaqSaZvgJQ9AybyTN5i7%2BDAKuvirBOWH3AqjH36zjB1ZZX%2Bn0CKIS1oOvs7aevSla&X-Amz-Signature=268864510ffa2729caa48f100cbaf1a57a7c5fc61820f08f2a51a2fe73a77864',
+          'ready': True,
+          'readyDt': '2025-07-11T13:09:30.528351Z',
+          'regionBias': None,
+          'reviewUrl': None,
+          'validatedDt': None}}

@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% block title %}Admin Recruiter Dashboard{% endblock %}
+{% block content %}
+<style>
+    body {
+        background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+    }
+    .admin-title {
+        color: #4f2e91;
+        font-weight: 900;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-shadow: 0 2px 12px rgba(79,46,145,0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+    }
+    .admin-title i {
+        color: #f1c40f;
+        font-size: 2.3rem;
+        filter: drop-shadow(0 2px 8px #fbc2eb60);
+    }
+    .recruiter-card {
+        border-radius: 18px;
+        box-shadow: 0 6px 32px 0 rgba(80, 80, 160, 0.10), 0 1.5px 4px 0 rgba(44,62,80,0.08);
+        background: linear-gradient(120deg, #fbc2eb 0%, #a18cd1 100%);
+        border: none;
+        transition: box-shadow 0.22s, transform 0.22s, background 0.22s;
+        position: relative;
+        overflow: hidden;
+        min-height: 180px;
+        animation: fadeInUp 0.8s cubic-bezier(.39,.575,.56,1.000);
+    }
+    .recruiter-card:hover {
+        box-shadow: 0 12px 36px 0 rgba(79,46,145,0.18), 0 2px 8px 0 rgba(44,62,80,0.10);
+        background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+        transform: translateY(-6px) scale(1.03);
+    }
+    .recruiter-card .card-title {
+        color: #4f2e91;
+        font-weight: 800;
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .recruiter-card .card-title i {
+        color: #764ba2;
+        font-size: 1.2rem;
+    }
+    .recruiter-card .card-text {
+        color: #2c3e50;
+        font-size: 1.08rem;
+        margin-bottom: 0.7rem;
+    }
+    .recruiter-card .btn-primary {
+        background: linear-gradient(90deg, #764ba2 0%, #f1c40f 100%);
+        border: none;
+        font-weight: 700;
+        border-radius: 10px;
+        padding: 0.5rem 1.3rem;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(102,126,234,0.10);
+        transition: transform 0.18s, box-shadow 0.18s, background 0.25s;
+    }
+    .recruiter-card .btn-primary:hover, .recruiter-card .btn-primary:focus {
+        background: linear-gradient(90deg, #f1c40f 0%, #764ba2 100%);
+        color: #fff;
+        transform: scale(1.04) translateY(-2px);
+        box-shadow: 0 6px 24px rgba(102,126,234,0.18);
+    }
+    @media (max-width: 991.98px) {
+        .admin-title {
+            font-size: 1.5rem;
+        }
+        .recruiter-card {
+            min-height: 150px;
+        }
+    }
+    @media (max-width: 767.98px) {
+        .admin-title {
+            font-size: 1.2rem;
+        }
+        .recruiter-card {
+            min-height: 120px;
+        }
+    }
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(40px); }
+        100% { opacity: 1; transform: none; }
+    }
+</style>
+<div class="container mt-4">
+    <div class="admin-title"><i class="fas fa-user-shield"></i>Recruiter Dashboard (Admin)</div>
+    <div class="row">
+        {% for recruiter in recruiters %}
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card recruiter-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-user-tie"></i> {{ recruiter.username }}</h5>
+                    <p class="card-text"><i class="fas fa-envelope"></i> {{ recruiter.email }}</p>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#recruiterModal{{ recruiter.id }}">
+                        <i class="fas fa-briefcase"></i> View Jobs & Applicants
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for recruiter -->
+        <div class="modal fade" id="recruiterModal{{ recruiter.id }}" tabindex="-1" aria-labelledby="recruiterModalLabel{{ recruiter.id }}" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="recruiterModalLabel{{ recruiter.id }}">
+                  <i class="fas fa-user-tie"></i> Jobs posted by {{ recruiter.username }}
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="max-height: 60vh; overflow-y: auto;">
+                {% if recruiter.jobs_posted|length == 0 %}
+                  <p>No jobs posted by this recruiter.</p>
+                {% else %}
+                  <div class="row">
+                  {% for job in recruiter.jobs_posted %}
+                    <div class="col-md-6 mb-3">
+                      <div class="card" style="border-radius:14px; box-shadow:0 2px 12px #a18cd140;">
+                        <div class="card-body">
+                          <h6 class="card-title" style="color:#764ba2; font-weight:700;"><i class="fas fa-briefcase"></i> {{ job.title }}</h6>
+                          <p class="card-text"><i class="fas fa-users"></i> Applicants: {{ job.applications|length }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %} 
